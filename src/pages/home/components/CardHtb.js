@@ -67,6 +67,7 @@ export default function CardHtb({mid, imagePath, backTitle, frontTitle, infoDisp
           height: 254px;
           margin-top: ${mid ? '-30px' : '0px'};
           font-family: Arial;
+          user-select: none;
         }
 
         a{

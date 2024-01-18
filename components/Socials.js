@@ -10,7 +10,7 @@ export default function Socials({ wTg, hTg, wDx, hDx, wTw, hTw, sizeLt, wBox, hB
           <Image src="/tg.png" width={wTg} height={hTg} alt="" />
         </div>
         </a>
-        <a href='https://www.geckoterminal.com/TON/pools/EQBCwe_IObXA4Mt3RbcHil2s4-v4YQS3wUDt1-DvZOceeMGO' rel='noreferrer' target="_BLANK">
+        <a href='https://www.geckoterminal.com/ton/pools/EQBCwe_IObXA4Mt3RbcHil2s4-v4YQS3wUDt1-DvZOceeMGO' rel='noreferrer' target="_BLANK">
         <div className="box">
           <Image src="/gecko.png" width={wDx} height={hDx} alt="" />
         </div>
