@@ -10,8 +10,9 @@ export default function Community(){
             <div className="title" data-aos="zoom-in">
                 JOIN THE RESISTANCE
             </div>
-            <div className='cimg'><Image src='/resistanceDog.png' fill='responsive' alt=''/></div>
+            <div className='cimg'><Image src='/stickers/animated3.gif' fill='responsive' alt=''/></div>
             <div className='descCommunity'><span>{`By aligning itself with the fundamentals of a balanced society brought together by a common objective, $REDO has created a holistic community - one that unapologetically voices its opinions while borrowing from Pavel Durov’s vision to overthrow regime, with the help of memes. $REDO is intent to prove that decentralisation, memes and decensorship can propel a community on TON - THE OPEN NETWORK to reach new heights, similar to flagship tokens on other blockchains.`}</span></div>
+            <div className='ca'><span>CA: EQBZ_cafPyDr5KUTs0aNxh0ZTDhkpEZONmLJA2SNGlLm4Cko</span></div>
             </Slide>
         </div>
 
@@ -42,7 +43,7 @@ export default function Community(){
         }
 
         .cimg{
-            width: 550px;
+            width: 300px;
             height: 300px;
         }
 
@@ -62,6 +63,23 @@ export default function Community(){
             letter-spacing: 1px;
             font-size: 1.08rem;
         }
+
+        .ca{
+            width: 100%;
+            height: min-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .ca span{
+            font-weight: bold;
+            font-size: 1.1rem;
+            font-family: var(--Row);
+            color: var(--mainCyan);
+        }
+        
 
         @media screen and (max-width: 1600px){
             .descCommunity span{
@@ -83,11 +101,6 @@ export default function Community(){
 
             .descCommunity span{
                 width: 90%;
-            }
-
-            .cimg{
-                width: 300px;
-                height: 150px;
             }
         }
         

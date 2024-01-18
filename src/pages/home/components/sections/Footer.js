@@ -1,13 +1,17 @@
+import Image from 'next/image';
 import Socials from "../../../../../components/Socials";
 
 export default function Footer() {
   return (
     <>
       <div className="footerContainer">
-        <div className='footerTitle'><span>RESISTANCE DOG</span></div>
-        <Socials wTg={25} hTg={25} wDx={23} hDx={25} wTw={35} hTw={35} sizeLt={27} wBox={45} hBox={45}/>
-        <div className='copy'><span>Copyright ® 2024 Resistance Dog. All Rights Reserved</span></div>
-        <div className='gmails'><span>admin@redoton.com</span><div className='separator'></div><span>redoonton@gmai.com</span></div>
+        <div className='footerImg'><Image src='/cimg.png' alt='' fill='responsive'/></div>
+        <div className='alignContent'>
+          <div className='footerTitle'><span>RESISTANCE DOG</span></div>
+          <Socials wTg={25} hTg={25} wDx={23} hDx={25} wTw={35} hTw={35} sizeLt={27} wBox={45} hBox={45}/>
+          <div className='copy'><span>Copyright ® 2024 Resistance Dog. All Rights Reserved</span></div>
+          <div className='gmails'><span>team.redoton@gmail.com</span><div className='separator'></div><span>redoonton@gmail.com</span></div>
+        </div>
       <div className="customShapeDividerTopFirstSection">
           <svg
             data-name="Layer 1"
@@ -26,13 +30,12 @@ export default function Footer() {
       <style jsx>{`
         .footerContainer {
           width: 100%;
-          height: 340px;
+          height: 380px;
           display: flex;
           align-items: center;
           justify-content: flex-start;
           flex-direction: column;
-          border-top: 1px solid rgba(255,255,255,0.1);
-          background-color: black;
+          background-color: rgba(0,0,0,0.1);
           position: relative;
           text-align: center;
         }
@@ -58,13 +61,19 @@ export default function Footer() {
           fill: var(--mainBlack);
         }
 
+        .alignContent{
+          display: flex;
+          flex-direction: column;
+          z-index: 1;
+        }
+        
         .footerTitle{
             width: 100%;
             height: min-content;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 120px;
+            margin-top: 170px;
         }
 
         .footerTitle span{
@@ -97,6 +106,16 @@ export default function Footer() {
             width: 1px;
             height: 10px;
             background-color: var(--mainCyan);
+        }
+
+        .footerImg{
+          width: 600px;
+          height: 350px;
+          position: absolute;
+          opacity: 0.3;
+          top: -7px;
+          margin: auto;
+          margin-right: 15px;
         }
 
         @media screen and (max-width: 500px){

@@ -40,9 +40,12 @@ export default function Home() {
       <Layout>
       <div className='mainContainer' onClick={()=>{playVideo()}}>
         <div className='tempBtn' id='tempBtn'><div className='btnEffect' id='btnEffect'><button onClick={(e)=>{e.stopPropagation();router.push('/home')}}>Join the Resistance</button></div></div>
-      <video ref={videoRef} controls={false}>
-        <source src="/intro.mp4" type="video/mp4" />
-      </video>
+        <video ref={videoRef} controls={false}>
+          <source src="/intro.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div className='mainMobile'>
+        <div className='tempBtnMobile'><div id='btnEffect'><button onClick={(e)=>{e.stopPropagation();router.push('/home')}}>Join the Resistance</button></div></div>
       </div>
       </Layout>
 
@@ -59,6 +62,10 @@ export default function Home() {
           height: 100%;
         }
 
+        .mainMobile{
+          visibility: hidden;
+        }
+
         .tempBtn{
           width: 100%;
           height: 100%;
@@ -70,6 +77,24 @@ export default function Home() {
           margin: auto;
           z-index: 1;
           display: none;
+        }
+
+        .tempBtnMobile{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: 1;
+          transition: 0.2s ease-out;
+          display: block;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: black;
         }
 
         .btnEffect{
@@ -191,6 +216,20 @@ export default function Home() {
         clip-path: var(--move1);
         transform: translate(0);
       }
+    }
+
+    @media screen and (max-width: 600px){
+      .mainContainer{
+        display: none;
+      }
+
+      .mainMobile{
+          visibility: visible;
+          width: 100%;
+          height: 100vh;
+          background-color: black;
+      }
+
     }
 
 

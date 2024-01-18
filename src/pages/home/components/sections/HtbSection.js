@@ -42,6 +42,7 @@ export default function HtbSection() {
           justify-content: flex-start;
           flex-direction: column;
           background-color: var(--mainBlack);
+          z-index: 3;
           margin-top: 180px;
         }
 

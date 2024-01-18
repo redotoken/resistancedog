@@ -265,10 +265,12 @@ export default function CardHtb({mid, imagePath, backTitle, frontTitle, infoDisp
         }
 
         .cardBack .descBack{
-          margin-top: 10px;
+          margin-top: 5px;
           text-align: center;
           font-family: Arial;
           color: white;
+          font-size: 0.85rem;
+          font-weight: bold;
         }
 
         .cardBack .titleBack2{
@@ -278,13 +280,6 @@ export default function CardHtb({mid, imagePath, backTitle, frontTitle, infoDisp
           margin-top: -7px;
         }
 
-        .cardBack .descBack2{
-          margin-top: 10px;
-          text-align: center;
-          font-family: Arial;
-          color: white;
-        }
-
         .cardBack .titleBack3{
           font-weight: bold;
           font-size: 1.1rem;
@@ -292,12 +287,6 @@ export default function CardHtb({mid, imagePath, backTitle, frontTitle, infoDisp
           margin-top: -15px;
         }
 
-        .cardBack .descBack3{
-          margin-top: 10px;
-          text-align: center;
-          font-family: Arial;
-          color: white;
-        }
 
         #htb1A{
           margin-top: 7px;

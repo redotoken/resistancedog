@@ -12,7 +12,7 @@ export default function Socials({ wTg, hTg, wDx, hDx, wTw, hTw, sizeLt, wBox, hB
         </a>
         <a href='https://www.geckoterminal.com/ton/pools/EQBCwe_IObXA4Mt3RbcHil2s4-v4YQS3wUDt1-DvZOceeMGO' rel='noreferrer' target="_BLANK">
         <div className="box">
-          <Image src="/dx.png" width={wDx} height={hDx} alt="" />
+          <Image src="/gecko.png" width={wDx} height={hDx} alt="" />
         </div>
         </a>
         <a href='https://twitter.com/redoonton' rel='noreferrer' target="_BLANK">
@@ -20,9 +20,11 @@ export default function Socials({ wTg, hTg, wDx, hDx, wTw, hTw, sizeLt, wBox, hB
           <Image src="/x.png" width={wTw} height={hTw} alt="" />
         </div>
         </a>
+        <a href='https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:eb50136e-81f2-40ba-b6cd-76db7f0dcd2c' rel='noreferrer' target="_BLANK">
         <div className="box">
           <FaRegNewspaper size={sizeLt} color="black" />
         </div>
+        </a>
       </div>
 
       <style jsx>{`
