@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 
@@ -51,6 +51,7 @@ export default function Home() {
         .mainContainer{
           width: 100%;
           height: 100vh;
+          background-color: black;
         }
 
         .mainContainer video{

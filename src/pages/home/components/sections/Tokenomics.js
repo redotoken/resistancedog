@@ -251,7 +251,7 @@ export default function Tokenomics() {
 
         .boxContainer .desc {
           font-size: 0.7rem;
-          color: #white;
+          color: white;
           width: 120px;
           height: min-content;
           text-align: center;
