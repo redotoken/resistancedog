@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 
@@ -7,14 +7,6 @@ export default function Home() {
   const router = useRouter();
 
   const videoRef = useRef(null);
-
-  const playVideo = ()=>{
-      const video = videoRef.current;
-      video.autoplay = true;
-      video.play();
-      showHiddenBtn();
-  }
-
 
   const showHiddenBtn = ()=>{
     const tempBtn = document.getElementById('tempBtn');
@@ -28,6 +20,22 @@ export default function Home() {
     },7500)
   }
 
+  useEffect(() => {
+    const video = videoRef.current;
+
+    const playVideo = () => {
+      video.play();
+    };
+    showHiddenBtn();
+    video.addEventListener('canplay', playVideo);
+
+    return () => {
+      video.removeEventListener('canplay', playVideo);
+    };
+  }, []);
+
+
+
 
   return (
     <>
@@ -38,12 +46,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-      <div className='mainContainer' onClick={()=>{playVideo()}}>
-        <div className='tempBtn' id='tempBtn'><div className='btnEffect' id='btnEffect'><button onClick={(e)=>{e.stopPropagation();router.push('/home')}}>Join the Resistance</button></div></div>
-        <video ref={videoRef} controls={false}>
-          <source src="/intro.mp4" type="video/mp4" />
-        </video>
+      <div className='mainContainer'>
+      <div className='tempBtn' id='tempBtn'>
+        <div className='btnEffect' id='btnEffect'>
+          <button onClick={(e) => { e.stopPropagation(); router.push('/home') }}>Join the Resistance</button>
+        </div>
       </div>
+      <video ref={videoRef} autoPlay muted playsInline controls={false}>
+        <source src="/intro.mp4" type="video/mp4" />
+      </video>
+    </div>
       <div className='mainMobile'>
         <div className='tempBtnMobile'><div id='btnEffect'><button onClick={(e)=>{e.stopPropagation();router.push('/home')}}>Join the Resistance</button></div></div>
       </div>
@@ -112,6 +124,7 @@ export default function Home() {
 
         .tempBtnShow button{
           cursor: pointer;
+          border: 1px solid white;
           font-family: var(--Row);
         }
 
