@@ -18,7 +18,7 @@ export default function Narrative() {
           </Slide>
           <div className="descContainer">
             <Slide direction="left" duration="300">
-              <span>{`A homage to the creation of Pavel Durov, founder of Ton - The Open Network and Telegram, Resistance Dog ($REDO), is a symbolic represtentation of our fight against censorship and freedom through digital resistance. Created in 2018 by Durov, our logo is the (un)official mascot of Telegram, and is at the forefront of Telegram’s consistent efforts to battle censorship by governments and multinational companies trying to restrict the ability of people to express themselves freely in digital media.
+              <span>{`A homage to the creation of Pavel Durov, founder of TON - The Open Network and Telegram, Resistance Dog ($REDO), is a symbolic represtentation of our fight against censorship and freedom through digital resistance. Created in 2018 by Durov, our logo is the (un)official mascot of Telegram, and is at the forefront of Telegram’s consistent efforts to battle censorship by governments and multinational companies trying to restrict the ability of people to express themselves freely in digital media.
           `}</span>
             </Slide>
           </div>
@@ -27,7 +27,7 @@ export default function Narrative() {
           <div className="descContainer desc2">
             <Slide direction="right" duration="300">
               <span>{`
-              $REDO intends to create, and has begun creating a robust decentralised community that is at the forefront of the battle for digital resistance, with Ton - The Open Network, Telegram and the millions of individuals fighting for the same cause. 
+              $REDO intends to create, and has begun creating a robust decentralised community that is at the forefront of the battle for digital resistance, with TON - The Open Network, Telegram and the millions of individuals fighting for the same cause. 
           `}</span>
               <span>
                 {`
