@@ -9,6 +9,7 @@ import Divider from "../../../components/Divider";
 import Tokenomics from "./components/sections/Tokenomics";
 import Community from "./components/sections/Community";
 import Footer from "./components/sections/Footer";
+import Designed from "../../../components/Designed";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
           <Divider />
           <Community />
           <Footer />
+          <Designed colorBg={'white'}/>
         </div>
       </Layout>
 
