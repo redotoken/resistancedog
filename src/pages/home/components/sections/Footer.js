@@ -10,7 +10,7 @@ export default function Footer() {
           <div className='footerTitle'><span>RESISTANCE DOG</span></div>
           <Socials wTg={25} hTg={25} wDx={23} hDx={25} wTw={35} hTw={35} sizeLt={27} wBox={45} hBox={45}/>
           <div className='copy'><span>Copyright ® 2024 Resistance Dog. All Rights Reserved</span></div>
-          <div className='gmails'><span>team.redoton@gmail.com</span><div className='separator'></div><span>redoonton@gmail.com</span></div>
+          <div className='gmails'><span>admin@redoton.com</span></div>
         </div>
       <div className="customShapeDividerTopFirstSection">
           <svg
