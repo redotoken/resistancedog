@@ -5,7 +5,7 @@ export default function Socials({ wTg, hTg, wDx, hDx, wTw, hTw, sizeLt, wBox, hB
   return (
     <>
       <div className="socialsContainer">
-        <a href='https://t.me/redoton' rel='noreferrer' target="_BLANK">
+        <a href='https://t.me/redotoken' rel='noreferrer' target="_BLANK">
         <div className="box">
           <Image src="/tg.png" width={wTg} height={hTg} alt="" />
         </div>
@@ -15,7 +15,7 @@ export default function Socials({ wTg, hTg, wDx, hDx, wTw, hTw, sizeLt, wBox, hB
           <Image src="/gecko.png" width={wDx} height={hDx} alt="" />
         </div>
         </a>
-        <a href='https://twitter.com/redoonton' rel='noreferrer' target="_BLANK">
+        <a href='https://x.com/redotoken' rel='noreferrer' target="_BLANK">
         <div className="box">
           <Image src="/x.png" width={wTw} height={hTw} alt="" />
         </div>
