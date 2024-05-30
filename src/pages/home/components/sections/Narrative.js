@@ -18,7 +18,7 @@ export default function Narrative() {
           </Slide>
           <div className="descContainer">
             <Slide direction="left" duration="300">
-              <span>{`A homage to the creation of Pavel Durov, founder of TON - The Open Network and Telegram, Resistance Dog ($REDO), is a symbolic represtentation of our fight against censorship and freedom through digital resistance. Created in 2018 by Durov, our logo is the (un)official mascot of Telegram, and is at the forefront of Telegram’s consistent efforts to battle censorship by governments and multinational companies trying to restrict the ability of people to express themselves freely in digital media.
+              <span>{`A homage to the creation of Pavel Durov, founder of TON - The Open Network and Telegram, Resistance Dog ($REDO), is a symbolic representation of our fight against censorship and freedom through digital resistance. Created in 2018 by Durov, our logo is the (un)official mascot of Telegram, and is at the forefront of Telegram’s consistent efforts to battle censorship by governments and multinational companies trying to restrict the ability of people to express themselves freely in digital media.
           `}</span>
             </Slide>
           </div>
