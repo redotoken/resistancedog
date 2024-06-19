@@ -13,6 +13,8 @@ export default function Community(){
             <div className='cimg'><Image src='/stickers/animated3.gif' fill='responsive' alt=''/></div>
             <div className='descCommunity'><span>{`By aligning itself with the fundamentals of a balanced society brought together by a common objective, $REDO has created a holistic community - one that unapologetically voices its opinions while borrowing from Pavel Durov’s vision to overthrow regime, with the help of memes. $REDO is intent to prove that decentralisation, memes and decensorship can propel a community on TON - THE OPEN NETWORK to reach new heights, similar to flagship tokens on other blockchains.`}</span></div>
             <div className='ca'><span>CA: EQBZ_cafPyDr5KUTs0aNxh0ZTDh</span><span>kpEZONmLJA2SNGlLm4Cko</span></div>
+            <div className='descCommunity'><span><a href='https://www.dextools.io/app/en/ton/pair-explorer/EQBCwe_IObXA4Mt3RbcHil2s4-v4YQS3wUDt1-DvZOceeMGO'>Dextools</a></span></div>
+            <div className='descCommunity'><span><a href='https://dexscreener.com/ton/eqbcwe_iobxa4mt3rbchil2s4-v4yqs3wudt1-dvzoceemgo'>Dexscreener</a></span></div>
             </Slide>
         </div>
 
